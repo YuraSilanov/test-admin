@@ -6,10 +6,7 @@
     style="height: 100vh"
   >
     <v-card class="pa-5" max-width="600">
-      <v-card-title>Welcome to the Dashboard</v-card-title>
-      <v-card-text>
-        <p>This is a placeholder for the authenticated user interface.</p>
-      </v-card-text>
+      <v-card-title>Dashboard</v-card-title>
     </v-card>
   </v-container>
 </template>

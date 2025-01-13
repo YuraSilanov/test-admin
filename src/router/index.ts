@@ -8,7 +8,7 @@ const router = createRouter({
   routes: [
     {
       path: "/",
-      name: "PageDashbord",
+      name: "PageDashboard",
       component: () => import("@/views/dashboard/PageDashboard.vue"),
     },
     {
