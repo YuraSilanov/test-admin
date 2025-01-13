@@ -1,5 +1,3 @@
-<script setup lang="ts"></script>
-
 <template>
   <v-container
     class="d-flex flex-column align-center justify-center"
@@ -10,5 +8,7 @@
     </v-card>
   </v-container>
 </template>
+
+<script setup lang="ts"></script>
 
 <style scoped></style>

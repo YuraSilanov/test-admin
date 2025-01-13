@@ -16,13 +16,13 @@
               v-model="formLogin.login"
               :rules="rules"
               label="Логин"
-            ></v-text-field>
+            />
             <v-text-field
               v-model="formLogin.password"
               :rules="rules"
               label="Пароль"
               type="password"
-            ></v-text-field>
+            />
             <v-btn color="primary" class="mt-2" type="submit" block>
               Войти
             </v-btn>
@@ -32,7 +32,7 @@
             text="Неверный логин или пароль"
             type="warning"
             class="mt-2"
-          ></v-alert>
+          />
         </v-tabs-window-item>
 
         <v-tabs-window-item>
@@ -46,7 +46,7 @@
               :rules="rules"
               label="Новый пароль"
               type="password"
-            ></v-text-field>
+            />
             <v-btn color="primary" class="mt-2" type="submit" block>
               Сбросить
             </v-btn>
@@ -72,7 +72,7 @@
 import { useRouter } from "vue-router";
 import { ref } from "vue";
 import { VForm } from "vuetify/components";
-import { useUserStore } from "../../stores/user";
+import { useUserStore } from "@/stores/user";
 
 const userStore = useUserStore();
 const router = useRouter();
