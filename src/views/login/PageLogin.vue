@@ -1,8 +1,5 @@
 <template>
-  <v-container
-    class="d-flex flex-column align-center justify-center"
-    style="height: 100vh"
-  >
+  <v-container class="d-flex flex-column align-center justify-center h-100">
     <v-card class="pa-5" max-width="400">
       <v-tabs v-model="tab" align-tabs="center">
         <v-tab :value="0">Авторизация</v-tab>

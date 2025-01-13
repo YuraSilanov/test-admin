@@ -1,1 +1,13 @@
 
+body {
+    overflow: auto;
+}
+
+#app {
+    width: 100%;
+    min-width: 660px;
+    max-width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+    overflow: auto;
+}
