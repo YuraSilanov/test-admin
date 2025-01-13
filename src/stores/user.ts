@@ -6,14 +6,9 @@ export const useUserStore = defineStore("user", () => {
   const password = ref("password");
   const auth = ref(false);
 
-  const resetPassword = (newPassword: string) => {
-    password.value = newPassword;
-  };
-
   return {
     login,
     password,
-    resetPassword,
     auth,
   };
 });
