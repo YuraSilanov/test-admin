@@ -34,7 +34,7 @@
 
         <v-tabs-window-item>
           <v-form
-            ref="formLoginResetPassword"
+            ref="formResetPasswordRef"
             fast-fail
             @submit.prevent="onResetPassword"
           >
@@ -79,7 +79,7 @@ const formLogin = ref({
   login: "",
   password: "",
 });
-const formLoginResetPassword = ref<VForm | null>(null);
+const formResetPasswordRef = ref<VForm | null>(null);
 const formResetPassword = ref({
   password: "",
 });
@@ -110,8 +110,8 @@ const onLogin = async () => {
 };
 
 const onResetPassword = async () => {
-  if (!formLoginResetPassword.value) return;
-  const { valid } = await formLoginResetPassword.value?.validate();
+  if (!formResetPasswordRef.value) return;
+  const { valid } = await formResetPasswordRef.value?.validate();
   if (!valid) return;
 
   userStore.password = formResetPassword.value.password;
